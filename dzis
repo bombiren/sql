@@ -1,29 +1,29 @@
-SELECT FROM pracownicy:
-
+SELECT * FROM pracownicy:
 SELECT imie, nazwisko, stanowisko FROM pracownicy:
-
-FROM pracownicy WHERE nazwisko Kowalski': SELECT
-
-SELECT FROM pracownicy WHERE placa < 1600:
-
-FROM pracownicy WHERE placa BETWEEN 1400 AND 1600: SELECT
-
-SELECT FROM pracownicy WHERE id IN (3,5,7):
-
-SELECT FROM pracownicy WHERE smie LIKE 'Kat':
-
-SELECT id, imie, nazwisko FROM pracownicy WHERE pesel 15 NULL;
-
+SELECT * FROM pracownicy WHERE nazwisko 'Kowalski': 
+SELECT * FROM pracownicy WHERE placa < 1600:
+SELECT * FROM pracownicy WHERE placa BETWEEN 1400 AND 1600: 
+SELECT * FROM pracownicy WHERE id IN (3,5,7):
+SELECT * FROM pracownicy WHERE imie LIKE 'K%':
+SELECT id, imie, nazwisko FROM pracownicy WHERE pesel IS NULL;
 SELECT nazwisko FROM pracownicy:
+SELECT * FROM pracownicy WHERE placa 1400 AND stanowisko NOT LIKE 'Kierownik' AND pesel IS NOT NULL;
 
-SELECT FROM pracownicy WHERE placa 1400 AND stanowisko NOT LIKE 'Kierownik' AND pesel IS NOT NULL;
+SELECT * FROM film WHERE dlugosc > 115;
+SELECT * FROM film WHERE rok  < 2000:
+SELECT * FROM film WHERE tytul LIKE 'G%';
+SELECT * FROM film ORDER BY tytul ASC:
+SELECT * FROM film ORDER BY dlugosc ASC:
+SELECT * FROM rezyser WHERE miejsce_urodzenia IN ('Polska', 'USA');
+SELECT * FROM ranking WHERE oscar;
 
-SELECT FROM Film WHERE dlugose 115
+SELECT * FROM dostawcy WHERE NOT dost_kraj = 'Polska';
+SELECT * FROM `dostawcy` WHERE dost_id LIKE 'B%';
+SELECT * FROM klienci WHERE kl_kod LIKE '4%';
+SELECT * FROM `klienci` WHERE kl_email IS NULL;
 
-SELECT FROM fiim WHERE rok 2000:
-
-SELECT FROM film WHERE tytul LIKE GA
-
-SELECT FROM film ORDER BY tytul ASC:
-
-SELECT FROM film ORDER BY dlugose ASC:
+SELECT * FROM `autorzy` WHERE imie LIKE 'D%';
+SELECT * FROM `pracownicy` WHERE wynagrodzenie BETWEEN 3000 AND 5000;
+SELECT * FROM  'pracownicy' imie = 'Jan' OR nazwisko = 'Nowak';
+SELECT * FROM  pracownicy WHERE id_stanowiska = 3;
+SELECT * FROM `gatunki` WHERE gatunek LIKE '%a';
