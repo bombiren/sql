@@ -1,0 +1,45 @@
+SELECT * FROM `dania` WHERE cena BETWEEN 10 AND 20;
+SELECT id, nazwa, cena FROM `dania` WHERE cena BETWEEN 20 AND 30;
+SELECT * FROM `dania` WHERE nazwa LIKE 'G%';
+SELECT * FROM `dania` WHERE nazwa LIKE '%a%';
+SELECT * FROM `dania` WHERE typ = 1;
+SELECT * FROM `dania` WHERE typ IS NOT NULL;
+SELECT * FROM `dania` WHERE typ IS NULL;
+SELECT * FROM `dania` WHERE nazwa IS NOT NULL;
+
+SELECT * FROM `gromady` WHERE nazwa LIKE 'r%';
+SELECT * FROM `gromady` WHERE opis IS NULL;
+SELECT * FROM `gromady` WHERE opis IS NOT NULL;
+
+SELECT * FROM `odzywianie` WHERE rodzaj LIKE 'd%';
+SELECT * FROM `odzywianie` WHERE informacja IS NULL;
+SELECT * FROM `odzywianie` WHERE informacja IS NOT NULL;
+
+SELECT * FROM `ogloszenie` WHERE kategoria = 1;
+SELECT * FROM `ogloszenie` WHERE tytul LIKE '%Daniel%';
+SELECT * FROM `ogloszenie` WHERE tresc LIKE '%sprzedam%';
+SELECT * FROM `ogloszenie` WHERE podkategoria BETWEEN 12 AND 14;
+SELECT * FROM `ogloszenie` WHERE uzytkownik_id IS NOT NULL;
+SELECT * FROM `ogloszenie` WHERE uzytkownik_id IS NULL;
+
+SELECT * FROM `podzespoly` WHERE cena BETWEEN 150 AND 300;
+SELECT * FROM `podzespoly` WHERE dostepnosc = 1;
+SELECT * FROM `podzespoly` WHERE opis LIKE '%DDR3%';
+SELECT * FROM `podzespoly` WHERE cena BETWEEN 300 AND 600;
+SELECT * FROM `podzespoly` WHERE dostepnosc IS NULL;
+SELECT * FROM `podzespoly` WHERE dostepnosc IS NOT NULL;
+
+SELECT * FROM `pracownicy` WHERE stanowisko = 2;
+SELECT * FROM `pracownicy` WHERE imie LIKE 'A%';
+SELECT * FROM `pracownicy` WHERE nazwisko LIKE '%a';
+SELECT * FROM `pracownicy` WHERE stanowisko BETWEEN 2 AND 3;
+SELECT * FROM `pracownicy` WHERE nazwisko IS NOT NULL;
+
+SELECT * FROM `typy` WHERE kategoria LIKE 'P%';
+SELECT * FROM `typy` WHERE opis IS NULL;
+SELECT * FROM `typy` WHERE opis IS NOT NULL;
+
+SELECT * FROM `uczniowie` WHERE wiek BETWEEN 9 AND 11;
+SELECT * FROM `uczniowie` WHERE imie LIKE 'K%';
+SELECT * FROM `uczniowie` WHERE nazwisko LIKE '%a%';
+SELECT * FROM `uczniowie` WHERE wiek IS NOT NULL;
