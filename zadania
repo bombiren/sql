@@ -43,3 +43,18 @@ SELECT * FROM `uczniowie` WHERE wiek BETWEEN 9 AND 11;
 SELECT * FROM `uczniowie` WHERE imie LIKE 'K%';
 SELECT * FROM `uczniowie` WHERE nazwisko LIKE '%a%';
 SELECT * FROM `uczniowie` WHERE wiek IS NOT NULL;
+
+SELECT * FROM `uzytkownik` WHERE email LIKE '%@poczta.pl';
+SELECT * FROM `uzytkownik` WHERE telefon LIKE '60%';
+SELECT * FROM `uzytkownik` WHERE nazwisko LIKE 'N%';
+SELECT * FROM `uzytkownik` WHERE email IS NULL;
+SELECT * FROM `uzytkownik` WHERE email IS NOT NULL;
+
+SELECT * FROM `wyniki` WHERE wynik BETWEEN 11.50 AND 12.00;
+SELECT * FROM `wyniki` WHERE dataUstanowienia BETWEEN '2015-10-06' AND '2015-10-14';
+SELECT * FROM `wyniki` WHERE dataUstanowienia LIKE '2015-10-%';
+SELECT * FROM `wyniki` WHERE dyscyplina_id IS NOT NULL;
+
+SELECT * FROM `zamowienia` WHERE dataZam = '2016-02-15';
+
+SELECT * FROM `zwierzeta` WHERE wystepowanie LIKE '%Europa%';
