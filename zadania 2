@@ -1,0 +1,18 @@
+SELECT * FROM `autorzy` WHERE nazwisko = 'Coben';
+SELECT imie, nazwisko FROM `czytelnicy` WHERE miasto = 'Poznań';
+SELECT tytul FROM `ksiazki` WHERE cena_netto > 30; 
+SELECT * FROM `pracownicy` WHERE wynagrodzenie <= 3500;
+SELECT tytul, cena_netto FROM `ksiazki` WHERE cena_netto <> 50;
+SELECT imie, nazwisko, miasto FROM `czytelnicy` WHERE miasto = 'Lublin'; 
+SELECT * FROM `wypozyczenia` WHERE id_czytelnika - 2;
+SELECT * FROM `pracownicy` WHERE nazwisko = 'Nowak';
+SELECT * FROM `sprzedaz` WHERE ilosc > 1;
+SELECT * FROM `czytelnicy` WHERE miasto IN ('Poznań', 'Lublin', 'Kraków');
+SELECT * FROM `ksiazki` WHERE id_gatunku IN (3, 4, 8);
+SELECT * FROM `autorzy` WHERE id_autora IN (1, 3, 5);
+SELECT * FROM `pracownicy` WHERE wynagrodzenie IN (3000, 4000, 5000);
+SELECT * FROM `stanowiska` WHERE id_stanowiska IN (1, 2, 6);
+SELECT * FROM `czytelnicy` WHERE id_czytelnika IN (2, 4, 6, 8);
+SELECT * FROM `ksiazki` WHERE cena_netto BETWEEN 20 AND 45;
+SELECT * FROM `pracownicy` WHERE wynagrodzenie BETWEEN 3000 AND 4000;
+SELECT * FROM `czytelnicy` WHERE id_czytelnika BETWEEN 5 AND 10;
