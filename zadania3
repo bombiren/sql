@@ -1,0 +1,15 @@
+SELECT COUNT(*) AS liczba_wierszy FROM pracownicy;
+SELECT COUNT(*) AS liczba_pustych_peseli FROM `pracownicy` WHERE pesel IS NULL;
+SELECT COUNT(*) AS liczba_sprzedawcow FROM `pracownicy` WHERE stanowisko = 'sprzedawca';
+SELECT AVG(placa) AS srednia_placa FROM `pracownicy`;
+SELECT MAX(placa) AS maksymalna_placa FROM `pracownicy`;
+SELECT MIN(placa) AS minimalna_placa FROM `pracownicy`;
+SELECT AVG(placa) AS srednia, MAX(placa) AS maksymalna, MIN(placa) AS minimalna FROM `pracownicy`;
+SELECT AVG(placa) AS srednia, MAX(placa) AS maksymalna, MIN(placa) AS minimalna FROM `pracownicy` WHERE stanowisko = "sprzedawca";
+SELECT SUM(placa) AS suma_plac FROM `pracownicy`;
+SELECT SUM(placa) AS suma_plac_sprzedawcow FROM `pracownicy` WHERE stanowisko = 'sprzedawca';
+SELECT AVG(cena) AS srednia_cena FROM `produkty`;
+SELECT COUNT(*) AS liczba_produktow FROM `produkty`;
+SELECT COUNT(*) AS liczba_dostawcow FROM `dostawcy` WHERE dost_woj IS NULL;
+SELCET SUM(cena) AS laczna_cena FROM zamowienia WHERE id_zamownienia = 20005;
+SELCET MIN(cena) AS minimalna_cena, MAX(cena) AS maksymalna_cena, AVG(cena) AS srednia_cena FROM `uslugi`;
